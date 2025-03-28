@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca51d1ac-9daf-4594-a6c3-23516b0fc3f8">
+  <producedTypes>
+    <objectType typeId="6c2e4ea0-f9ff-408f-820c-24152d0ad4cd" valueTypeId="dca3c7b8-6cdc-4ec9-9853-f8216d6f2c52"/>
+    <refType typeId="31fd0d07-2af4-4f51-b240-b5cc312e5f85" valueTypeId="80e6cbad-a38c-49f4-b4e2-c581484d762a"/>
+    <selectionType typeId="22443463-3c49-4892-9994-0da98fd0f566" valueTypeId="b4f5db62-76a9-4679-b478-958c36fc5d7b"/>
+    <listType typeId="63263b0b-48f3-4dd5-b5fe-c80a80f8ede2" valueTypeId="611a6fb6-f3f6-4995-acf3-37fce9329769"/>
+    <managerType typeId="347e1f6f-ba9f-4db9-953e-4a5c4944cffb" valueTypeId="0ca583f6-c32a-45c4-8e6b-ca22f9fbd76b"/>
+    <displacingCalculationTypesType typeId="6bee6d0c-5051-40fd-b7c7-17fd79f8f413" valueTypeId="ee72aa49-4ffb-4be8-9d5b-80f8d5a7610d"/>
+    <displacingCalculationTypesRowType typeId="0041841c-5d38-4765-9edc-50c881bac722" valueTypeId="329d12e3-6508-4a0a-a097-4dd4a005355d"/>
+    <baseCalculationTypesType typeId="f10557b2-4da2-4826-86d0-589f0d6aa1c9" valueTypeId="2630e874-0c38-481e-853b-8bb930b219d2"/>
+    <baseCalculationTypesRowType typeId="cfa383f8-2faf-4413-8485-540b718a6012" valueTypeId="e79b1c7e-3bf0-44a1-ad0a-828ff8eecbc7"/>
+    <leadingCalculationTypesType typeId="f6805b0e-6bae-4a9a-860f-a336291157e2" valueTypeId="e49b0979-c616-485d-b762-4a47c2d16844"/>
+    <leadingCalculationTypesRowType typeId="f7079ac3-c850-48d9-99fc-d6c64aee829d" valueTypeId="2631e6c9-ff7c-4500-9ab6-f0c9f65ba7d3"/>
+  </producedTypes>
+  <name>Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.Удержания.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.Удержания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>5</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCalculationTypes.Удержания.Form.ФормаВидаРасчета</defaultObjectForm>
+  <defaultListForm>ChartOfCalculationTypes.Удержания.Form.ФормаСписка</defaultListForm>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Премии</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Удержания</baseCalculationTypes>
+  <attributes uuid="cf948502-287b-40dc-b8ee-dbcc0d512234">
+    <name>СпособРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыРасчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="04c3c98f-ada5-4ca8-984a-6bc4f6310b9c">
+    <name>КатегорияРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория расчета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КатегорииРасчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="1fb5ac9a-4bc0-46a0-a52e-d6976bb94d97">
+    <name>ФормаВидаРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вида расчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c9f18c74-9a9d-47e4-bf5c-84c663c434ad">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCalculationTypes>

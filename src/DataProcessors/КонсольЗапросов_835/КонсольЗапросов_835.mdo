@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c85f9c74-f24b-4c00-bccb-8910d27de3d7">
+  <producedTypes>
+    <objectType typeId="8fa07569-1467-46a4-96d0-0341a68cd13c" valueTypeId="b9c1288f-62f2-473c-9f56-cb557bba69a7"/>
+    <managerType typeId="9a909160-0199-4244-ba62-f88ff506ab2c" valueTypeId="7f9bcdb0-c19f-4ce0-9108-cba85eb6319b"/>
+  </producedTypes>
+  <name>КонсольЗапросов_835</name>
+  <synonym>
+    <key>ru</key>
+    <value>Консоль запросов</value>
+  </synonym>
+  <comment>Консоль повторяет интерфейс и основные возможности Консоли запросов 8.1, а также позволяет получать результаты пакетных запросов и временных таблиц</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КонсольЗапросов_835.Form.Форма</defaultForm>
+  <auxiliaryForm>DataProcessor.КонсольЗапросов_835.Form.Форма</auxiliaryForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="2ce1044b-46ae-4592-a51a-f7e65a1083ca">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8cd49dab-424a-4bb3-b18a-4a9586a2af34">
+    <name>ФормаВложеннойТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вложенной таблицы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ca34be6-caea-4aad-8dc6-ab195924973c">
+    <name>ФормаОсобогоТипа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма особого типа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="febc0128-51a9-4d1b-8491-3a10bdd72b67">
+    <name>МакетРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет результата</value>
+    </synonym>
+  </templates>
+  <commands uuid="e3d994c8-9649-4478-be0b-8ca61a9c2aeb">
+    <name>КонсольЗапросов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Консоль запросов</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

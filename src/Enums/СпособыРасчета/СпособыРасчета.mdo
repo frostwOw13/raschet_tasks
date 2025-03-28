@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af8be63f-a935-4995-b851-b056c201fcc5">
+  <producedTypes>
+    <refType typeId="d5787b2b-f9cd-4609-a782-18d135263970" valueTypeId="a884508d-213a-44c5-a9a0-343a747c79e1"/>
+    <listType typeId="e820c076-a880-41fc-8961-bbcd8f14341a" valueTypeId="50bcfa53-a9ee-4db2-9e79-07a0a4832fb3"/>
+    <managerType typeId="9ae03344-d9ba-4cc6-870f-f03f73601a2b" valueTypeId="8c233f13-f68e-418d-a4a3-1ef97b475684"/>
+  </producedTypes>
+  <name>СпособыРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы расчета</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2ede823e-2954-4ab7-ae6a-76a2b387a0ce">
+    <name>ПоОкладу</name>
+    <synonym>
+      <key>ru</key>
+      <value>По окладу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b9fd87ad-eb9d-460f-aa7e-12b56e688b6e">
+    <name>Процентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процентом</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="77974baa-a489-4c7e-a29b-495824687995">
+    <name>Фиксированно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированно</value>
+    </synonym>
+    <comment>(Общ)</comment>
+  </enumValues>
+  <enumValues uuid="86da23f1-72ca-42a6-b5d3-d513d52e36c0">
+    <name>ОтОборота</name>
+    <synonym>
+      <key>ru</key>
+      <value>От оборота</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="be703642-d25c-4515-abe7-29ed2d78a93e">
+    <name>ЧасовойТариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часовой тариф</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a7118273-3094-4e9e-94d9-64fbbde7ca5d">
+    <name>СвободныйВыход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свободный выход</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f6a12ee9-317f-448e-8ca0-646639b59a5b">
+    <name>ШтрафЗаПрогул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штраф за прогул</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a5b5edc0-adee-4058-8b0a-9ec4b3a07334">
+    <name>ПропорциональноВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропорционально времени</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

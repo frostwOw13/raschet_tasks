@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7469990a-749d-4ab9-a52c-0bc7ddcafb2a">
+  <producedTypes>
+    <managerType typeId="51393b2e-e18f-4a82-aea1-814d361ecb0a" valueTypeId="27871ed0-c5e2-40fe-b6d7-d956e0aecf12"/>
+    <valueManagerType typeId="2483e42c-39aa-440b-bd0c-8cacacee031f" valueTypeId="a6b49b5b-f100-439e-b9bc-50cbbdfc99e4"/>
+    <valueKeyType typeId="d9794bd1-18b1-438b-9ba0-ff205c350e5c" valueTypeId="50edb41c-50ed-4784-a834-42bc75d285d4"/>
+  </producedTypes>
+  <name>ШтрафЗаПрогул</name>
+  <synonym>
+    <key>ru</key>
+    <value>Штраф за прогул</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

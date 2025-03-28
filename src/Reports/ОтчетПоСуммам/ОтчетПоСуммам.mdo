@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2986252-76ab-4894-97c9-24461d4ae35d">
+  <producedTypes>
+    <objectType typeId="8be2e968-05f6-486c-bd56-8b4fc32b6fc6" valueTypeId="7ec0fb1a-b9fb-41f0-a76b-fce19b8b57f8"/>
+    <managerType typeId="cbba1bd6-4d37-43c9-9f14-f2ad2f0cce00" valueTypeId="9438b9a9-bda1-4f40-a897-93f325a8ec17"/>
+  </producedTypes>
+  <name>ОтчетПоСуммам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по суммам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоСуммам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="92aeafc0-243e-48df-96ad-17179ff09ffc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

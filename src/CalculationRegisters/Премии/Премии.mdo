@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37c99cc9-e8f6-402d-a869-a32fe0067fd2">
+  <producedTypes>
+    <selectionType typeId="d3067aa0-ca68-44f1-b370-38194c05d759" valueTypeId="89fe0ac8-3c9a-42fe-9b3b-bde4082df0b8"/>
+    <listType typeId="375c482e-a737-46f9-b5fc-d341c22d881c" valueTypeId="04c386df-23a8-47d2-90d0-fb5933e68bec"/>
+    <managerType typeId="a3fe6ea2-e8d5-49ec-9e6a-91dace6d8425" valueTypeId="06406956-498d-4551-a372-6126ae6d0454"/>
+    <recordSetType typeId="70a8ecd4-8d36-4dbc-8ce7-3a1403a80b65" valueTypeId="206d67ad-4a3b-44b5-905b-f6b9625d3350"/>
+    <recordKeyType typeId="6f92bddb-4552-4234-b112-cbe2e8beeef5" valueTypeId="c85d8e90-aa01-4477-97e8-994b221fe0f8"/>
+    <recordType typeId="db54b869-de01-4c0c-af0d-24afe7e786e1" valueTypeId="2fe4094f-ac00-436b-bbec-a51bd2ffa14d"/>
+    <recalcsType typeId="f2ee9adb-0bc9-48b2-8fa4-4af2bc7f0046" valueTypeId="20492e38-755e-4186-a04a-5466615edb17"/>
+  </producedTypes>
+  <name>Премии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Премии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.Премии</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b27f3635-0acd-4ed1-b572-f7c070103617">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="6b010902-ff49-4144-ba81-58e701347172">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="c143ed03-04ea-422d-a011-f90f483387c3">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="fef25e3e-1ba6-4617-9777-c90f8a772b04">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <recalculations uuid="4228f065-5aa5-46d5-98fa-dd7ea2c00efb">
+    <producedTypes>
+      <recordType typeId="bba78b89-02d9-4f3c-9004-da778c7f5b75" valueTypeId="1f0e05f5-7f72-4fbf-bbeb-bccf5e3cd21b"/>
+      <managerType typeId="195e3945-b28b-46b9-aadd-817d1221fb46" valueTypeId="a1bf2487-e407-448f-8f80-e4fe7ff4800f"/>
+      <recordSetType typeId="dc786fbb-e758-49fe-ba6e-2ef5f21fa6c2" valueTypeId="f940c6d5-c991-4f7e-a3c1-693555cb068a"/>
+    </producedTypes>
+    <name>ПерерасчетПремий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перерасчет премий</value>
+    </synonym>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <dimensions uuid="eee0fa25-b563-47dd-95b4-29da1edf4bc1">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <registerDimension>CalculationRegister.Премии.Dimension.Сотрудник</registerDimension>
+      <leadingRegisterData>CalculationRegister.ОсновныеНачисления.Dimension.Сотрудник</leadingRegisterData>
+      <leadingRegisterData>CalculationRegister.Премии.Dimension.Сотрудник</leadingRegisterData>
+    </dimensions>
+    <dimensions uuid="a4efc413-1342-4259-9a6e-e8a921a7a6f9">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <registerDimension>CalculationRegister.Премии.Dimension.Должность</registerDimension>
+      <leadingRegisterData>CalculationRegister.ОсновныеНачисления.Dimension.Должность</leadingRegisterData>
+      <leadingRegisterData>CalculationRegister.Премии.Dimension.Должность</leadingRegisterData>
+    </dimensions>
+  </recalculations>
+</mdclass:CalculationRegister>

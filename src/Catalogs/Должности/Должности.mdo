@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="394bdf50-13cc-4fd8-ac40-db98688c7527">
+  <producedTypes>
+    <objectType typeId="863c7a71-79a8-4808-a43f-3c8ad41a3e0d" valueTypeId="527d887c-c686-48d1-b4bf-37aacf5da86c"/>
+    <refType typeId="b9ce5d9b-08a8-457f-bc53-e22571d828e1" valueTypeId="ffbeefb8-9a12-4609-a210-2edbd5896191"/>
+    <selectionType typeId="15599c77-6748-405f-8187-b6d7cb4f684e" valueTypeId="e905cbdf-3369-49ca-ac53-873288938f32"/>
+    <listType typeId="fc9aa0b6-a17d-4d8b-a579-d7dbcf25d6aa" valueTypeId="61d71d54-e9ed-4507-8873-d2c7ab55e7f6"/>
+    <managerType typeId="d0ffb55e-5fa0-4801-85c1-d68c01286bbe" valueTypeId="43a97cd3-258b-4ec4-8559-8e00f9380af6"/>
+  </producedTypes>
+  <name>Должности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Должности.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Должности.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Справочник «Должности»</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>6</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="da94fb58-8db5-43f9-8525-801981a0d129">
+      <name>АгентПоПродажам</name>
+      <description>Агент по продажам</description>
+      <code xsi:type="core:StringValue">
+        <value>000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.Должности.Form.ФормаСписка</defaultListForm>
+  <forms uuid="36a6a816-3726-4b5c-a0ee-899ecc5986ec">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

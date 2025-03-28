@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5979947c-b6f8-407f-b04a-dd712f4f37e9">
+  <producedTypes>
+    <objectType typeId="83b427de-ae3f-4088-a70b-a5e4ec0eb522" valueTypeId="00f5ae21-4f63-4ba4-a7f0-ce39efa9280c"/>
+    <refType typeId="acffd7ee-f5d8-4e0c-a084-0723a4c49ae9" valueTypeId="dd41388e-377d-4816-9ebb-0cd627ca4793"/>
+    <selectionType typeId="80c83aff-e6e8-4a63-b227-d12500078959" valueTypeId="87585cbc-9f08-4bce-a847-37110196a8c0"/>
+    <listType typeId="be374e1f-1886-4e26-a595-7b4dde00b719" valueTypeId="7473b4b3-9eef-4392-a844-f22d1034a94e"/>
+    <managerType typeId="57a86390-db26-49f9-8ad3-4bf637737032" valueTypeId="f0692756-7e42-48a2-9b95-d97c9f975f24"/>
+  </producedTypes>
+  <name>ГрафикиРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГрафикиРаботы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГрафикиРаботы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Справочник «Графики работы»</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ГрафикиРаботы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ГрафикиРаботы.Form.ФормаСписка</defaultListForm>
+  <tabularSections uuid="b039244b-1cea-4bc6-915b-2208a3bc319e">
+    <producedTypes>
+      <objectType typeId="24fca134-be5b-4e25-b567-4e4f29f447bc" valueTypeId="4fb9e00b-5f25-4e8b-a216-200e617c9a8c"/>
+      <rowType typeId="cdb51c6c-e6c8-4015-b318-18cda9991184" valueTypeId="9e356fe6-575d-4776-ba32-0cc6bafdee62"/>
+    </producedTypes>
+    <name>ДлительностьРабочегоДня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность рабочего дня</value>
+    </synonym>
+    <attributes uuid="6aeab7d3-d560-45b3-afe4-3908a768724b">
+      <name>Длительность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Длительность</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f272baa9-469c-4f1d-8ef9-29e598379a97">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="973a4e4f-5a01-4c2d-8a43-eae4626f028b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
